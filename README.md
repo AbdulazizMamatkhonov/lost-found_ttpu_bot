@@ -1,4 +1,4 @@
-![Django project](https://github.com/Muhammadkomron/lost-found_ttpu_bot)
+![Django project](https://github.com/AbdulazizMamatkhonov/lost-found_ttpu_bot)
 
 # Lost&Found TTPU Project
 
@@ -6,8 +6,8 @@
 
 - Prerequisites
 - Setup
-    - Development
-    - Production
+  - Development
+  - Production
 - Documentation
 
 ## Prerequisites
@@ -25,11 +25,11 @@ This project has the following prerequisites
 - Clone project:
 
 ```
-git clone https://github.com/Muhammadkomron/lost-found_ttpu_bot
+git clone https://github.com/AbdulazizMamatkhonov/lost-found_ttpu_bot
 cd lost-found_ttpu_bot
 ```
 
-- First create or login to https://ngrok.com and copy your token then paste it to *.envs/.local/.ngrok*
+- First create or login to https://ngrok.com and copy your token then paste it to _.envs/.local/.ngrok_
 
 ```
 AUTH_TOKEN="paste your ngrok token here"
@@ -53,10 +53,11 @@ docker-compose -f local.yaml up -d
 docker-compose -f local.yaml run --rm django python manage.py createsuperuser
 ```
 
-- Then you should import static written Telegram Bot buttons which located in *src/apps/bot/management/commands/bot_content_credentials.py* later you can edit in admin panel:
+- Then you should import static written Telegram Bot buttons which located in _src/apps/bot/management/commands/bot_content_credentials.py_ later you can edit in admin panel:
 
 ```
 docker-compose -f local.yaml run --rm django python manage.py import_bot_credentials
 ```
-- The last thing you should create is test telegram channel and get *id*
+
+- The last thing you should create is test telegram channel and get _id_
 - You should be good to go now
